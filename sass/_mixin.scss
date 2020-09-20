@@ -1,0 +1,55 @@
+//
+// Mixin
+//
+
+@mixin body{
+	font-family: Arial, Helvetica, sans-serif;
+	border-top: 17px solid #090909;
+	margin: 0;
+}
+
+body {
+    @include body;
+}
+
+
+@mixin comp{
+	text-transform: uppercase;
+	color: #090909;
+	padding-bottom: 12px;
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+}
+
+@mixin h2{
+	font-size: 18px;
+	padding-left: 30px;
+	background-position: 0 7px;
+}
+
+h2 {
+    @include h2();
+    @include comp();
+}
+
+@mixin h3{
+	font-size: 12px;
+	padding-left: 23px;
+	background-size: 8px;
+	background-position: 0 5px;
+}
+
+h3 {
+    @include h3();
+    @include comp();
+}
+@mixin p{
+	color: #5d5d5d;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+p {
+    @include p();
+    @include comp();
+}
