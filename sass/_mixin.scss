@@ -2,10 +2,15 @@
 // Mixin
 //
 
+$black: #090909;
+$gray: #5d5d5d;
+$light-gray: #f4f4f4;
+
 @mixin body{
 	font-family: Arial, Helvetica, sans-serif;
-	border-top: 17px solid #090909;
+	border-top: 17px solid $black;
 	margin: 0;
+	background-color: $light-gray;
 }
 
 body {
@@ -14,8 +19,7 @@ body {
 
 
 @mixin comp{
-	text-transform: uppercase;
-	color: #090909;
+	color: $black;
 	padding-bottom: 12px;
 	background-image: url('../img/arrow.png');
 	background-repeat: no-repeat;
@@ -44,7 +48,7 @@ h3 {
     @include comp();
 }
 @mixin p{
-	color: #5d5d5d;
+	color: $gray;
 	font-size: 12px;
 	line-height: 15px;
 }
