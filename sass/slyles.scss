@@ -3,16 +3,16 @@
 //
 
 //Header
-@import 'header';
+@import 'partials/header';
 
 //Main
-@import 'main';
+@import 'partials/main';
 
 //Footer
-@import 'footer';
+@import 'partials/footer';
 
 //Mixin
-@import 'mixin';
+@import 'config/mixin';
 
-//Global
-@import 'global';
+//Globa
+@import 'config/global';
