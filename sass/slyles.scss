@@ -14,5 +14,9 @@
 //Mixin
 @import 'config/mixin';
 
-//Globa
+//Global
 @import 'config/global';
+
+//@Media
+@import 'partials/tablet.scss';
+@import 'partials/movile.scss';
